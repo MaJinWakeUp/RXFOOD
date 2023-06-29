@@ -15,8 +15,8 @@ import argparse
 import numpy as np
 from model.dataset import MSSODDataset
 from PIL import Image
-from model.net import (DualBASNet, DualBASNetwithMSCA,
-                        DualCPD, DualCPDwithMSCA)
+from model.net import (DualBASNet, DualBASNetwithRXFOOD,
+                        DualCPD, DualCPDwithRXFOOD)
 import datetime
 import torch.nn.functional as F
 import torchvision.transforms as T
@@ -110,7 +110,7 @@ def inference(model, dataset, data_dir, save_dir, model_name):
 
 if __name__ == '__main__':
     torch.cuda.empty_cache()
-    model_name = 'DualBASNet_MSSOD'
+    model_name = 'DualCPDwithRXFOOD_MSSOD'
     data_dir = '/home/majin/datasets/MultiSpectralSOD/Images'
     checkpoint = './log/'+model_name+'.pth'
     save_dir = os.path.join('./results/MSSOD/')
