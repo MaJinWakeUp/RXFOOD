@@ -16,7 +16,7 @@ python train_MSSOD.py --data_dir PATH_TO_DATASET
 ```
 
 ## Testing
-Change the ckpt name, or download [the pretrained model](http://google.com unavailable now), and put it to `log/DualCPDwithRXFOOD.pth`.
+Change the ckpt name, or download [the pretrained model](http://google.com "waiting"), and put it to `log/DualCPDwithRXFOOD.pth`.
 ```
 python test_MSSOD.py
 ```
