@@ -13,7 +13,7 @@ We provide the training, testing, and evaluation code for RGB-NIR saliency objec
 Download the [RGBN-SOD dataset](https://tsllb.github.io/MultiSOD.html), and put dataset/train&val&test.txt under Image directory.
 
 ## Training
-The default network for training is TBD<sub>CPD</sub>(Two Branch CPD Network), you can switch to different network by modifying line 54. You can modify parameters as shown in argparser.
+The default network for training is TBD<sub>CPD</sub>(Two Branch CPD Network), you can switch to different network by modifying line 54. You can also modify different parameters in the argparser.
 ```
 python train_MSSOD.py --data_dir PATH_TO_DATASET
 ```
