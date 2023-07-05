@@ -19,7 +19,7 @@ python train_MSSOD.py --data_dir PATH_TO_DATASET
 ```
 
 ## Testing
-Change the ckpt name, or download [the pretrained model](https://drive.google.com/file/d/1-aFeRggrFxHI2zcXnlIuN8_QU1ukR7Jr/view?usp=drive_link), and put it to `log/DualCPDwithRXFOOD.pth`.
+Change the ckpt name, or download [the pretrained model](https://drive.google.com/file/d/1-aFeRggrFxHI2zcXnlIuN8_QU1ukR7Jr/view?usp=drive_link), and put it to `log/DualCPDwithRXFOOD_MSSOD.pth`.
 ```
 python test_MSSOD.py
 ```
@@ -29,3 +29,13 @@ python test_MSSOD.py
 python eval_api.py
 ```
 
+## Citing RXFOOD
+If you find this work helps you in your research, please use the following BibTex entry.
+```BibTeX
+@article{ma2023rxfood,
+  title={RXFOOD: Plug-in RGB-X Fusion for Object of Interest Detection},
+  author={Ma, Jin and Li, Jinlong and Guo, Qing and Zhang, Tianyun and Lin, Yuewei and Yu, Hongkai},
+  journal={arXiv preprint arXiv:2306.12621},
+  year={2023}
+}
+```
