@@ -54,7 +54,7 @@ def save_output(image_name,pred,d_dir):
     imo.save(os.path.join(d_dir, imidx_+'.png'))
 
 def load_model(checkpoint):
-    model = DualBASNet(3,1)
+    model = DualCPDwithRXFOOD()
     ret = model.load_state_dict(torch.load(checkpoint), strict=True)
     print(f'[Info] loaded weights: {checkpoint}')
     model = model.cuda()

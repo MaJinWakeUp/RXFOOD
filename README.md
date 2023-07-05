@@ -9,14 +9,17 @@ We provide the training, testing, and evaluation code for RGB-NIR saliency objec
 * PILLOW
 * [pysodmetrics](https://github.com/lartpang/PySODMetrics/tree/main)
 
+## Dataset
+Download the [RGBN-SOD dataset](https://tsllb.github.io/MultiSOD.html), and put dataset/train&val&test.txt under Image directory.
+
 ## Training
-The default network for training is TBD<sub>CPD</sub>(Two Branch CPD Network), you can switch to different network by modifying line 54.
+The default network for training is TBD<sub>CPD</sub>(Two Branch CPD Network), you can switch to different network by modifying line 54. You can modify parameters as shown in argparser.
 ```
 python train_MSSOD.py --data_dir PATH_TO_DATASET
 ```
 
 ## Testing
-Change the ckpt name, or download [the pretrained model](http://google.com "waiting"), and put it to `log/DualCPDwithRXFOOD.pth`.
+Change the ckpt name, or download [the pretrained model](https://drive.google.com/file/d/1-aFeRggrFxHI2zcXnlIuN8_QU1ukR7Jr/view?usp=drive_link), and put it to `log/DualCPDwithRXFOOD.pth`.
 ```
 python test_MSSOD.py
 ```
